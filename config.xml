@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.ryanw.barcodedemo"
         version   = "2.0.0">
-    <name>Scanner Demo</name>
+    <name>Car Parking Reservation</name>
 
     <description>
         Scans barcodes.
@@ -12,9 +12,17 @@
     <author href="http://phonegap.com" email="support@phonegap.com">
         PhoneGap Team
     </author>
-
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.1" />
     <plugin name="phonegap-plugin-barcodescanner"/>
-
+    <plugin name="cordova-plugin-whitelist"/>
+        
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
     <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
